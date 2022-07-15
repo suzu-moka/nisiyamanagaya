@@ -1,6 +1,7 @@
 .main{
     &__inner{
-
+        width: 90%;
+        margin: auto;
     }
     &__thumbnail__price{
         &__visual{
@@ -36,6 +37,7 @@
             &__text{
                 line-height: (35em/16);
                 margin: (30em/16) (80em/16) 0;
+                
             }
             &__demo{
                 max-width: 600px;
@@ -45,6 +47,9 @@
                 height: 100%;
                 margin: auto 0;
                 margin-right: (25em/16);
+                @media screen and (max-width:428px) {
+                    margin-right: 0;
+                }
             }
         }
         &__span__A{
@@ -114,7 +119,7 @@
 }
 
 
-@media screen and (min-width: 415px){
+@media screen and (max-width: 415px){
 
     .main{
         &__inner{
@@ -155,6 +160,7 @@
                     line-height: (35em/14);
                     margin: 0 (39em/14);
                     margin-bottom: (30em/14);
+                    line-height: 2;
                 }
                 &__demo{
                     max-width: 100%;
@@ -210,12 +216,11 @@
                 margin-bottom: (60em/16);
             }
             &__fee{
-                margin: 0 (25em/16);
-                margin-top: (30em/16);
+                margin: 0 1.5625em;
+                margin-top: 3.75em;
                 border: 1px solid #000;
                 height: 350px;
-                max-width: 100%;
-                max-height: 104px;
+                max-width: 1230px;
             }
         }
         &__main__member{

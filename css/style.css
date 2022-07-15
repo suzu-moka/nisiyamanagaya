@@ -371,6 +371,8 @@ p {
 }
 .main__sensation img.item {
   position: absolute;
+  width: 72px;
+  height: 72px;
 }
 .main__sensation .logo {
   position: absolute;
@@ -412,6 +414,327 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+}
+@media screen and (max-width: 429px) {
+  /*　画面サイズが428pxまではここを読み込む　*/
+  .main__sensation {
+    height: 1183px;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    background-color: #FFF8F2;
+  }
+  .main__sensation .main__circle {
+    position: relative;
+    width: 100%;
+  }
+  .main__sensation .circle-box {
+    position: relative;
+    margin: 0 4.375em;
+  }
+  .main__sensation div.item {
+    position: absolute;
+  }
+  .main__sensation .logo {
+    position: absolute;
+    top: 386px;
+    left: 409.5px;
+  }
+}
+.about__text {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #303030;
+  margin-top: 3.75em;
+}
+@media screen and (max-width: 428px) {
+  .about__text {
+    margin-top: 2.5em;
+  }
+}
+.about__text-sub {
+  display: block;
+  font-size: 2.25rem;
+  margin: 5% 0;
+  font-weight: bold;
+}
+@media screen and (max-width: 428px) {
+  .about__text-sub {
+    font-size: 1.5rem;
+  }
+}
+
+.Philosophy__bisual {
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.8; /*半透明カラーの透明度*/
+  position: relative;
+  padding: 2% 10%;
+}
+.Philosophy__bisual:before {
+  content: "";
+  background: url("../img/about/about_main.png"); /*背景画像のURL*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  filter: blur(8px); /*ぼかし度*/
+  position: absolute;
+  background-repeat: no-repeat;
+  /* 参考: http://designcolor-web.com/2016/09/14/css-blur-effects-background/*/
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  z-index: -1;
+}
+.Philosophy__inner {
+  margin: 1.5625em;
+}
+.Philosophy__content {
+  padding: 3.75em;
+  background-color: #F9F4EF;
+}
+.Philosophy__writing_style__day {
+  margin-bottom: 1em;
+}
+.Philosophy__writing_style__span {
+  margin: 3% 0;
+  display: block;
+}
+.Philosophy_writing_style_space {
+  display: block;
+  margin: 1.2em;
+}
+
+.shop {
+  margin-top: 3.75em;
+}
+@media screen and (max-width: 428px) {
+  .shop {
+    margin-top: 2.5em;
+  }
+}
+.shop__inner {
+  width: 95%;
+  margin: auto;
+}
+.shop_image-box {
+  width: 50%;
+}
+.shop__exterior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 428px) {
+  .shop__exterior {
+    width: 100%;
+  }
+}
+.shop__exterior-image {
+  display: block;
+  width: 100%;
+}
+.shop__exterior-text {
+  line-height: 1.5;
+}
+@media screen and (max-width: 428px) {
+  .shop__exterior-text {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+}
+.shop__exterior-title {
+  font-size: 1.5rem;
+  margin-bottom: 4%;
+}
+@media screen and (max-width: 428px) {
+  .shop__exterior-title {
+    margin-bottom: 0.625em;
+    font-size: 1.125rem;
+  }
+}
+.shop__exterior-content {
+  width: 50%;
+  padding-right: 2%;
+}
+@media screen and (max-width: 428px) {
+  .shop__exterior-content {
+    padding-right: 0.7em;
+  }
+}
+.shop__interior {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 428px) {
+  .shop__interior-text {
+    font-size: 0.75rem;
+  }
+}
+.shop__interior-title {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 428px) {
+  .shop__interior-title {
+    margin-bottom: 0.625em;
+    font-size: 1rem;
+  }
+}
+.shop__interior-content {
+  width: 50%;
+  padding-left: 2%;
+}
+@media screen and (max-width: 428px) {
+  .shop__interior-content {
+    font-size: 1rem;
+    width: 50%;
+    padding-left: 0.5em;
+  }
+}
+.shop__interior-image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.interview {
+  background-color: #FAFAFA;
+  margin-top: 3.75em;
+  padding-top: 3.75em;
+  padding-bottom: 5em;
+}
+.interview__inner {
+  width: 90%;
+  margin: auto;
+}
+.interview__content {
+  width: 100%;
+  text-align: left;
+  margin-top: 3.75em;
+  background-color: #FAFAFA;
+}
+@media screen and (max-width: 428px) {
+  .interview__content {
+    padding: 0;
+  }
+}
+.interview__inner {
+  margin: 0 auto;
+  width: 95%;
+}
+.interview__question {
+  padding-left: 5%;
+  font-size: 1.5625rem;
+  margin-bottom: 2.5em;
+}
+@media screen and (max-width: 428px) {
+  .interview__question {
+    font-size: 1.125rem;
+    margin-bottom: 1.875em;
+  }
+}
+.interview__box {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.interview__box-img {
+  width: 12%;
+}
+@media screen and (max-width: 428px) {
+  .interview__box-img {
+    width: 20%;
+  }
+}
+.interview__image {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 428px) {
+  .interview__image {
+    width: 100%;
+  }
+}
+.interview__answer {
+  width: 40%;
+  font-size: 1.5rem;
+  margin-left: 2%;
+}
+@media screen and (max-width: 428px) {
+  .interview__answer {
+    margin-left: 5%;
+    font-size: 1.125rem;
+  }
+}
+
+.events {
+  margin: 3.75em;
+}
+@media screen and (max-width: 428px) {
+  .events {
+    margin: 2.5rem;
+  }
+}
+.events__inner {
+  width: 90%;
+  margin: auto;
+}
+.events__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 2.5em;
+}
+@media screen and (max-width: 428px) {
+  .events__box {
+    display: block;
+  }
+}
+.events__title {
+  font-weight: normal;
+  margin-left: 10%;
+  font-size: 1.875rem;
+  margin-bottom: 1.25em;
+}
+@media screen and (max-width: 428px) {
+  .events__title {
+    font-size: 1.125rem;
+  }
+}
+.events__image {
+  display: block;
+  width: 30%;
+}
+@media screen and (max-width: 428px) {
+  .events__image {
+    width: 80%;
+    margin: 0 auto 1.875em auto;
+  }
+}
+.events__answer {
+  margin-left: 2%;
+  font-size: 1.5625em;
+}
+@media screen and (max-width: 428px) {
+  .events__answer {
+    font-size: 1.125rem;
+  }
+}
+
+.main__inner {
+  width: 90%;
+  margin: auto;
 }
 .main__thumbnail__price__visual {
   max-width: 100%;
@@ -456,6 +779,11 @@ p {
   margin: auto 0;
   margin-right: 1.5625em;
 }
+@media screen and (max-width: 428px) {
+  .main__bookshelf__about__demo {
+    margin-right: 0;
+  }
+}
 .main__bookshelf__benefit {
   margin-top: 7.5em;
 }
@@ -472,7 +800,7 @@ p {
   text-align: left;
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (max-width: 415px) {
   .main__thumbnail__price__visual {
     max-width: 100%;
     width: 100vw;
@@ -508,6 +836,7 @@ p {
     line-height: 2.5em;
     margin: 0 2.7857142857em;
     margin-bottom: 2.1428571429em;
+    line-height: 2;
   }
   .main__bookshelf__about__demo {
     max-width: 100%;
@@ -521,11 +850,10 @@ p {
   }
   .main__bookshelf__fee {
     margin: 0 1.5625em;
-    margin-top: 1.875em;
+    margin-top: 3.75em;
     border: 1px solid #000;
     height: 350px;
-    max-width: 100%;
-    max-height: 104px;
+    max-width: 1230px;
   }
   .main__price__title {
     font-size: 24px;
