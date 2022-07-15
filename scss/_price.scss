@@ -1,0 +1,240 @@
+.main{
+    &__inner{
+
+    }
+    &__thumbnail__price{
+        &__visual{
+            max-width: 100%;
+            width: 100vw;
+        }
+    }
+    &__rental{
+        margin-top: (60em/16);
+        padding-bottom: (60em/16);
+        &__calender{
+            margin: (60em/16) 0;
+            &__demo{
+                max-width: 100%;
+                width: 100vw;
+            }
+        }
+        &__fee{
+            margin-top: (60em/16);
+            border: 1px solid #000;
+            height: 350px;
+            max-width: 1230px;
+        }
+    }
+    &__bookshelf{
+        margin: 0 calc(50% - 50vw);
+        padding-top: (60em/16);
+        padding-bottom: (60em/16);
+        background-color: #FFF8F2;
+        &__about{
+            display: flex;
+            justify-content: center;
+            &__text{
+                line-height: (35em/16);
+                margin: (30em/16) (80em/16) 0;
+            }
+            &__demo{
+                max-width: 600px;
+                max-width: 100%;
+
+                max-height: 500px;
+                height: 100%;
+                margin: auto 0;
+                margin-right: (25em/16);
+            }
+        }
+        &__span__A{
+            &-a{
+
+            }
+            &-b{
+                
+            }
+            &-c{
+                
+            }
+            &-d{
+                
+            }
+        }
+        &__span__B{
+            &-a{
+
+            }
+            &-b{
+                
+            }
+            &-c{
+                
+            }
+            &-d{
+                
+            }
+        }
+        &__span__C{
+            &-a{
+
+            }
+            &-b{
+                
+            }
+            &-c{
+                
+            }
+            &-d{
+                
+            }
+        }
+        &__benefit{
+            margin-top: (120em/16);
+        }
+        &__fee{
+            margin: 0 (25em/16);
+            margin-top: (60em/16);
+            border: 1px solid #000;
+            height: 350px;
+            max-width: 1230px;
+        }
+    }
+    &__main__member{
+        &__text{
+
+        }
+    }
+}
+
+.main__price__title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+@media screen and (min-width: 415px){
+
+    .main{
+        &__inner{
+    
+        }
+        &__thumbnail__price{
+            &__visual{
+                max-width: 100%;
+                width: 100vw;
+            }
+        }
+        &__rental{
+            margin-top: (30em/16);
+            padding-bottom: (30em/16);
+            &__calender{
+                margin: (30em/16) 0;
+                &__demo{
+                    max-width: 100%;
+                    width: 100vw;
+                }
+            }
+            &__fee{
+                margin-top: (30em/16);
+                border: 1px solid #000;
+                height: 104px;
+                max-width: 1230px;
+            }
+        }
+        &__bookshelf{
+            margin: 0 calc(50% - 50vw);
+            padding-top: (30em/16);
+            padding-bottom: (40em/16);
+            background-color: #FFF8F2;
+            &__about{
+                display: block;
+                &__text{
+                    font-size: 14px;
+                    line-height: (35em/14);
+                    margin: 0 (39em/14);
+                    margin-bottom: (30em/14);
+                }
+                &__demo{
+                    max-width: 100%;
+                    padding:0 (25em/16);
+                    margin: 0;
+                }
+            }
+            &__span__A{
+                &-a{
+    
+                }
+                &-b{
+                    
+                }
+                &-c{
+                    
+                }
+                &-d{
+                    
+                }
+            }
+            &__span__B{
+                &-a{
+    
+                }
+                &-b{
+                    
+                }
+                &-c{
+                    
+                }
+                &-d{
+                    
+                }
+            }
+            &__span__C{
+                &-a{
+    
+                }
+                &-b{
+                    
+                }
+                &-c{
+                    
+                }
+                &-d{
+                    
+                }
+            }
+            &__benefit{
+                height: 300px;
+                margin-top: (40em/16);
+                margin-bottom: (60em/16);
+            }
+            &__fee{
+                margin: 0 (25em/16);
+                margin-top: (30em/16);
+                border: 1px solid #000;
+                height: 350px;
+                max-width: 100%;
+                max-height: 104px;
+            }
+        }
+        &__main__member{
+            &__text{
+    
+            }
+        }
+    }
+    
+    .main__price__title{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    h4.main__content__title:nth-child(3){
+        margin-bottom: (30em/30);
+    }
+    h4.main__content__title:nth-child(4){
+        margin-top: (40em/30);
+    }
+}

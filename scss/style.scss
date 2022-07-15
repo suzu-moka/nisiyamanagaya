@@ -1,0 +1,14 @@
+/* base */
+@use "./base/base";
+
+/* index */
+@use "./index";
+
+/* about */
+@use "./about";
+
+/* color */ 
+@use "./base/color";
+
+/* price */ 
+@use "./price";

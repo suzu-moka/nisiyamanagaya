@@ -1,0 +1,393 @@
+@use "./color" as color;
+
+@mixin inner-p($t: (0em/16), $l: (25em/16), $b: (0em/16), $r: (25em/16),) {
+    margin: $t $l $b $r;
+}
+
+
+
+body{
+    max-width: 100%;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+
+.header{
+    max-width: 1280px;
+    height: 130px;
+    margin: 0 auto;
+    &__inner{
+        @include inner-p();
+        padding-top: (30em/16);
+        padding-bottom: (15em/16);
+        display: flex;
+        flex-wrap: nowrap;
+
+        height: 130px;
+    }
+    &__logo.logo{
+        width: 60%;
+        align-content: center;
+        .logo{
+            &__link{
+                &__visual{
+
+                }
+            }
+        }
+    }
+    &__nav.nav{
+        width: 40%;
+        align-items: baseline;
+        @media screen and (max-width:414px) {
+            display: none;
+        }
+        .nav{
+            &__gnav{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items:stretch;
+                &__list{
+                    &__link{
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main{
+    max-width: 1280px;
+    margin: 0 auto;
+    &__inner{
+        @include inner-p();
+    }
+}
+
+p{
+    color: color.$color-text;
+}
+
+
+
+.footer{
+    background-color: #474747;
+    &__inner{
+        margin: 0 (25em/16);
+        padding-bottom: (30em/16);
+    }
+    &__sns{
+        background-color: #FAFAFA;
+        margin: 0 calc(50% - 50vw);
+        padding: (60em/16) 0;
+        padding-top: (40em/16);
+        .main__content__title:nth-of-type(1){
+            margin-top: 0;
+            margin-bottom: (50em/30);
+        }
+        &__text{
+            width: 90%;
+            margin: auto;
+        }
+    }
+    .sns{
+        display: flex;
+        justify-content: center;
+        &__list{
+            &__link{
+                &__img{
+
+                }
+            }
+        }
+
+        &__text{
+
+        }
+    }
+    .sns:nth-of-type(1){
+        margin: (50em/16) 0;
+        .sns__list:nth-of-type(1){
+            margin-right: (93.5em/16);
+        }
+        .sns__list:nth-of-type(2){
+            margin-left: (93.5em/16);
+        }
+    }
+    .sns:nth-of-type(2){
+        margin: 0 (74em/16) 0 0;
+        width: 50%;
+        // .sns__list:nth-of-type(1){
+        //     margin-right: (93.5em/16);
+        // }
+        // .sns__list:nth-of-type(2){
+        //     margin-left: (93.5em/16);
+        // }
+    }
+    &__nav{
+        color: #FFFFFF;
+        padding: (60em/16) 0;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__logo{
+        width: 50%;
+        text-align: left;
+    }
+    .nav{
+        width: 50%;
+        &__gnav{
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin-right: (74em/16);
+            &__list{
+                font-size: 12px;
+            }
+            &__list:nth-of-type(1){
+                margin-right: (50em/16);
+            }
+            &__list:nth-of-type(2){
+                margin: 0 (50em/16);
+            }
+            &__list:nth-of-type(3){
+                margin-left: (50em/16);
+            }
+        }
+    }
+    &__address{
+        width: 50%;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .copyright{
+        color: #FFFFFF;
+    }
+}
+
+
+// hunberger
+
+.mainblur{
+    background-color: #fff;
+    filter: blur(8px);
+}
+
+#g-nav{
+    position: fixed;
+    z-index: -1;
+    opacity: 0;/*はじめは透過０*/
+    top: 0;
+    width: 100%;
+    height: 100vh;/*ナビの高さ*/
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s;
+}
+
+/* panelaactiveのクラスがついたら透過無しで最前面 */
+#g-nav.panelactive{
+    opacity: 1;
+    z-index: 998;
+}
+
+/* ナビゲーション */
+#g-nav ul{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#g-nav.panelactive ul{
+    display: block;
+}
+
+/* リストのレイアウト */
+#g-nav li{
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a{
+    color: #dfa081;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/* ボタンのためのCSS */
+.openbtn1{
+    display: none;
+    position: fixed;
+    z-index: 999;/*最前面*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/* ☓に変化 */
+.openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #dfa081;
+    width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1){
+    top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2){
+    top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3){
+    top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1){
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2){
+    opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+// SmartPhone
+@media screen and (max-width:415px) {
+    .openbtn1{
+        display: block;
+    }
+    .footer{
+        background-color: #474747;
+        &__inner{
+            margin: 0 (25em/16);
+            padding-bottom: (30em/16);
+        }
+        &__sns{
+            background-color: #FAFAFA;
+            margin: 0 calc(50% - 50vw);
+            padding: (40em/16) 0;
+            .main__content__title:nth-of-type(1){
+                margin-top: 0;
+                margin-bottom: (50em/30);
+            }
+            &__text{
+                padding: 0 (73em/16);
+            }
+        }
+        .sns{
+            display: flex;
+            justify-content: center;
+            &__list{
+                &__link{
+                    &__img{
+    
+                    }
+                }
+            }
+        }
+        ul.sns:nth-of-type(1){
+            margin-top: (40em/16);
+            margin-bottom: (50em/16);
+            .sns__list:nth-of-type(1){
+                margin-right: (93.5em/16);
+            }
+            .sns__list:nth-of-type(2){
+                margin-left: (93.5em/16);
+            }
+        }
+        ul.sns:nth-of-type(2){
+            margin: 0;
+            li.sns__list:nth-of-type(1){
+                margin-right: (20em/16);
+            }
+            li.sns__:nth-of-type(2){
+                margin-left: (20em/16);
+            }
+        }
+
+
+        &__nav{
+            color: #FFFFFF;
+            padding: (60em/16) 0;
+    
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__logo{
+            max-width: 237px;
+            width: 100%;
+            text-align: center;
+            margin: auto 0;
+        }
+        .nav{
+            max-width: 72px;
+            width: 100%;
+            &__gnav{
+                display: block;
+                margin: 0;
+                &__list{
+                    font-size: 12px;
+                }
+                &__list:nth-of-type(1){
+                    margin-right: 0;
+                    margin-bottom: (27em/16);
+                }
+                &__list:nth-of-type(2){
+                    margin: (27em/16) 0;
+                }
+                &__list:nth-of-type(3){
+                    margin-left: 0;
+                    margin-top: (27em/16);
+                }
+            }
+        }
+        &__address{
+            width: 50%;
+            font-size: 12px;
+            text-align: left;
+        }
+    
+        .copyright{
+            color: #FFFFFF;
+        }
+    }
+}
