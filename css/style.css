@@ -3,7 +3,6 @@ body {
   max-width: 100%;
   font-size: 16px;
   margin: 0;
-  text-align: center;
 }
 
 li {
@@ -342,6 +341,11 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.main__thumbnail .main__thumbnail__visual {
+  position: absolute;
+  text-align: left;
+  top: 16.25em;
+}
 .main__about.about {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
@@ -371,8 +375,6 @@ p {
 }
 .main__sensation img.item {
   position: absolute;
-  width: 72px;
-  height: 72px;
 }
 .main__sensation .logo {
   position: absolute;
@@ -418,7 +420,7 @@ p {
 @media screen and (max-width: 429px) {
   /*　画面サイズが428pxまではここを読み込む　*/
   .main__sensation {
-    height: 1183px;
+    height: 424px;
     width: 100vw;
     margin: 0 calc(50% - 50vw);
     background-color: #FFF8F2;
@@ -429,15 +431,21 @@ p {
   }
   .main__sensation .circle-box {
     position: relative;
-    margin: 0 4.375em;
+    margin: 0 11.375em;
   }
   .main__sensation div.item {
     position: absolute;
   }
+  .main__sensation img.item {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+  }
   .main__sensation .logo {
     position: absolute;
-    top: 386px;
-    left: 409.5px;
+    top: 121px;
+    left: 143px;
+    width: 134px;
   }
 }
 .about__text {
