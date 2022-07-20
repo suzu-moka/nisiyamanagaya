@@ -1,8 +1,4 @@
 $(function(){
-
-
-
-
     if (window.matchMedia("(max-width: 429px)").matches) {
         //画面横幅が429px以下のときの処理
         let item_num = $('div.item').length;
@@ -33,3 +29,47 @@ $(function(){
         });
       };
 });
+
+// slideshow
+  let pic_array=[
+    "./img/LP/LP_main_visual.png",
+    "./img/LP/LP_second_visual.png",
+    "./img/LP/LP_third_visual.png"
+  ];
+  console.log(pic_array[1]);
+  
+  let img = document.querySelector(".main__thumbnail");
+  let next = document.getElementById("right");
+  let back = document.getElementById("left");
+  console.log(img);
+  
+  let count = 0;
+
+  function delay(){
+    if(count == 2){
+      count = 0;
+    }else{
+      count++;
+    }
+  img.style.backgroundImage = 'url(' + pic_array[count] + ')';
+  }
+
+  function prev(){
+    if(count == 0){
+      count = 2;
+    }else{
+      count--;
+    }
+  img.style.backgroundImage = 'url(' + pic_array[count] + ')';
+  }
+
+  next.addEventListener("click",function(){
+    delay();
+  });
+
+  back.addEventListener("click",function(){
+    prev();
+  });
+
+  window.setInterval(delay,4500)
+
