@@ -102,6 +102,9 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.footer__nav-sub {
+  display: flex;
+}
 .footer__logo {
   width: 50%;
   text-align: left;
@@ -129,6 +132,7 @@ p {
 }
 .footer__address {
   width: 50%;
+  margin-top: 3.75em;
   font-size: 12px;
   text-align: left;
 }
