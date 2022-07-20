@@ -10,7 +10,7 @@ body{
     max-width: 100%;
     font-size: 16px;
     margin: 0;
-    text-align: center;
+
 
 }
 
@@ -22,26 +22,22 @@ img{
     vertical-align: top;
 }
 
-.logo{
-    &__img{
-        height: auto;
-    }
-}
 
 .header{
     max-width: 1280px;
+    height: 130px;
     margin: 0 auto;
     &__inner{
-        // @include inner-p();
+        @include inner-p();
         padding-top: (30em/16);
         padding-bottom: (15em/16);
         display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
         flex-wrap: nowrap;
+
+        height: 130px;
     }
     &__logo.logo{
-        width: 45%;
+        width: 60%;
         align-content: center;
         .logo{
             &__link{
@@ -52,26 +48,22 @@ img{
         }
     }
     &__nav.nav{
-        width: 45%;
+        width: 40%;
         align-items: baseline;
-        @media screen and (max-width:428px) {
+        @media screen and (max-width:414px) {
             display: none;
         }
-    }
-}
-
-.nav{
-    &__gnav{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items:stretch;
-        &__list{
-        }
-        &__link{
-            display: block;
-            text-decoration: none;
-            color: color.$color-text;
+        .nav{
+            &__gnav{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items:stretch;
+                &__list{
+                    &__link{
+                    }
+                }
+            }
         }
     }
 }
@@ -308,18 +300,7 @@ p{
 }
 
 // SmartPhone
-@media screen and (max-width:428px) {
-    .header{
-        &__inner{
-            display: block;
-        }
-
-        &__logo.logo{
-            width: 60%;
-            margin-left: 6%;
-        }
-    }
-
+@media screen and (max-width:415px) {
     .openbtn1{
         display: block;
     }
