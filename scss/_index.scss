@@ -12,8 +12,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        // &__visual{
-        // }
+        .main__thumbnail__visual{
+            position: absolute;
+            text-align: left;
+            top: (260em/16);
+        }
     }
     // about
     &__about.about{
@@ -49,8 +52,6 @@
         }
         img.item {
             position: absolute;
-            width: 72px;
-            height: 72px;
         }
         .logo{
             position: absolute;
@@ -132,7 +133,7 @@
         }
     
         &__sensation{
-            height: 1183px;
+            height: 424px;
             width: 100vw;
             margin: 0 calc(50% - 50vw);
             background-color: color.$color-about-base;
@@ -142,15 +143,21 @@
             }
             .circle-box {
                 position: relative;
-                margin: 0 (70em/16);
+                margin: 0 (182em/16);
             }
             div.item {
                 position: absolute;
             }
+            img.item {
+                position: absolute;
+                width: 74px;
+                height: 74px;
+            }
             .logo{
                 position: absolute;
-                top: 386px;
-                left:409.5px;
+                top: 121px;
+                left:143px;
+                width: 134px;
             }
         }
         &__access{
