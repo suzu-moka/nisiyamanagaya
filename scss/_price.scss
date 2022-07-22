@@ -116,6 +116,8 @@
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+    text-align: center;
+    margin-bottom: 0.5em;
 }
 
 
@@ -161,6 +163,7 @@
                     margin: 0 (39em/14);
                     margin-bottom: (30em/14);
                     line-height: 2;
+                    text-align: center;
                 }
                 &__demo{
                     max-width: 100%;

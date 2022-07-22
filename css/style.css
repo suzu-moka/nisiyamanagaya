@@ -13,10 +13,20 @@ img {
   vertical-align: top;
 }
 
+.nav__gnav__link {
+  text-decoration: none;
+  color: #707070;
+}
+
+.rogo__img {
+  width: 100%;
+}
+
 .header {
   max-width: 1280px;
   height: 130px;
   margin: 0 auto;
+  margin-bottom: 1em;
 }
 .header__inner {
   margin: 0em 1.5625em 0em 1.5625em;
@@ -24,8 +34,16 @@ img {
   padding-bottom: 0.9375em;
   display: flex;
   flex-wrap: nowrap;
-  height: 130px;
+  align-items: flex-end;
+  justify-content: space-between;
 }
+.header__rogo {
+  width: 45%;
+}
+.header__rogo__img {
+  width: 100%;
+}
+
 .header__logo.logo {
   width: 60%;
   align-content: center;
@@ -77,6 +95,7 @@ p {
 .footer__sns__text {
   width: 90%;
   margin: auto;
+  text-align: center;
 }
 .footer .sns {
   display: flex;
@@ -102,6 +121,13 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.footer__nav__gnav {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  min-width: 180px;
+  }
 .footer__nav-sub {
   display: flex;
 }
@@ -138,6 +164,12 @@ p {
 }
 .footer .copyright {
   color: #FFFFFF;
+}
+.footer__cont {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  min-width: 120px;
 }
 
 .mainblur {
@@ -247,6 +279,10 @@ p {
 }
 
 @media screen and (max-width: 415px) {
+  .header__rogo {
+    width: 80%;
+  }
+
   .openbtn1 {
     display: block;
   }
@@ -299,11 +335,20 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .footer__nav__gnav {
+    display: block;
+    width: 20%;
+    text-align: left;
+    padding-left: 4em;
+  }
+  .footer__nav__gnav__list {
+    margin-bottom: 1.875em;
+  }
   .footer__logo {
     max-width: 237px;
-    width: 100%;
+    width: 40%;
     text-align: center;
-    margin: auto 0;
+    margin: 0;
   }
   .footer .nav {
     max-width: 72px;
@@ -328,9 +373,12 @@ p {
     margin-top: 1.6875em;
   }
   .footer__address {
-    width: 50%;
+    width: 65%;
     font-size: 12px;
     text-align: left;
+  }
+  .footer__cont {
+    margin-top: 2.5em;
   }
   .footer .copyright {
     color: #FFFFFF;
@@ -344,6 +392,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: background-image 1s ease-in;
 }
 .main__thumbnail .main__thumbnail__visual {
   position: absolute;
@@ -385,6 +434,10 @@ p {
   top: 386px;
   left: 409.5px;
 }
+.main__access {
+  margin-top: 3.75em;
+  text-align: center;
+}
 .main__access__box {
   display: flex;
   justify-content: center;
@@ -406,6 +459,7 @@ p {
   font-size: 1.875rem;
   margin-top: 0.4666666667em;
   margin-bottom: 2em;
+  text-align: center;
 }
 .main__content__title-sub {
   font-size: 1rem;
@@ -416,6 +470,62 @@ p {
 }
 .main__content__view {
   text-align: right;
+}
+
+/*>*/
+.next {
+  float: right;
+  top: 360px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/*<*/
+.back {
+  float: left;
+  bottom: -360px;
+  left: 30px;
+  cursor: pointer;
+}
+
+/*矢印のデザイン*/
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.arrow::before,
+.arrow::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+
+.next::before {
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid rgb(255, 255, 255);
+  border-right: 5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.back::before {
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  border-left: 5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -510,6 +620,9 @@ p {
   padding: 3.75em;
   background-color: #F9F4EF;
 }
+.Philosophy__writing_style {
+  text-align: center;
+}
 .Philosophy__writing_style__day {
   margin-bottom: 1em;
 }
@@ -574,6 +687,7 @@ p {
 .shop__exterior-content {
   width: 50%;
   padding-right: 2%;
+  text-align: center;
 }
 @media screen and (max-width: 428px) {
   .shop__exterior-content {
@@ -605,6 +719,7 @@ p {
 .shop__interior-content {
   width: 50%;
   padding-left: 2%;
+  text-align: center;
 }
 @media screen and (max-width: 428px) {
   .shop__interior-content {
@@ -743,6 +858,9 @@ p {
     font-size: 1.125rem;
   }
 }
+.events__text {
+  text-align: center;
+}
 
 .main__inner {
   width: 90%;
@@ -810,6 +928,8 @@ p {
   font-size: 24px;
   font-weight: bold;
   text-align: left;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 415px) {
@@ -849,6 +969,7 @@ p {
     margin: 0 2.7857142857em;
     margin-bottom: 2.1428571429em;
     line-height: 2;
+    text-align: center;
   }
   .main__bookshelf__about__demo {
     max-width: 100%;
