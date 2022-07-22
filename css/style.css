@@ -120,11 +120,15 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .footer__nav__gnav {
   display: flex;
   width: 40%;
   justify-content: space-between;
   min-width: 180px;
+  }
+.footer__nav-sub {
+  display: flex;
 }
 .footer__logo {
   width: 50%;
