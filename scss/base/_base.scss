@@ -100,7 +100,13 @@ p{
     color: color.$color-text;
 }
 
+.main__contnet__title{
+    text-align: center;
+}
 
+.main__content__title-sub{
+    text-align: center;
+}
 
 .footer{
     background-color: #474747;
@@ -177,9 +183,7 @@ p{
         &-sub{
             display: flex;
         }
-    }
-
-    &__logo{
+        &__logo{
         width: 50%;
         text-align: left;
     }

@@ -43,7 +43,6 @@ img {
 .header__rogo__img {
   width: 100%;
 }
-
 .header__logo.logo {
   width: 60%;
   align-content: center;
@@ -73,6 +72,14 @@ img {
 
 p {
   color: #707070;
+}
+
+.main__contnet__title {
+  text-align: center;
+}
+
+.main__content__title-sub {
+  text-align: center;
 }
 
 .footer {
@@ -121,14 +128,13 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.footer__nav__gnav {
+.footer__gnav {
   display: flex;
   width: 40%;
   justify-content: space-between;
   min-width: 180px;
-  }
-.footer__nav-sub {
+}
+.footer-sub {
   display: flex;
 }
 .footer__logo {
@@ -282,7 +288,6 @@ p {
   .header__rogo {
     width: 80%;
   }
-
   .openbtn1 {
     display: block;
   }
@@ -409,6 +414,11 @@ p {
   font-size: 2.25rem;
   font-weight: bold;
 }
+.main__about.about .about .main__content__title-sub:nth-of-type(1) {
+  margin-top: 3em;
+  margin-bottom: 3.8em;
+  text-align: center;
+}
 .main__sensation {
   height: 1183px;
   width: 100vw;
@@ -420,19 +430,20 @@ p {
   width: 100%;
 }
 .main__sensation .circle-box {
+  background-color: #000;
   position: relative;
-  margin: 0 0.3125em;
+  max-width: 1120px;
+  left: 6.25%;
+  right: 6.25%;
 }
 .main__sensation div.item {
-  position: absolute;
-}
-.main__sensation img.item {
   position: absolute;
 }
 .main__sensation .logo {
   position: absolute;
   top: 386px;
-  left: 409.5px;
+  left: 35.47%;
+  right: 35.47%;
 }
 .main__access {
   margin-top: 3.75em;
@@ -469,6 +480,7 @@ p {
   margin-bottom: 3.8em;
 }
 .main__content__view {
+  display: block;
   text-align: right;
 }
 
@@ -545,20 +557,22 @@ p {
   }
   .main__sensation .circle-box {
     position: relative;
-    margin: 0 11.375em;
+    max-width: 364px;
+    left: 6.055%;
+    right: 6.04%;
   }
   .main__sensation div.item {
     position: absolute;
   }
-  .main__sensation img.item {
-    position: absolute;
+  .main__sensation .item_circle {
     width: 74px;
     height: 74px;
   }
   .main__sensation .logo {
     position: absolute;
     top: 121px;
-    left: 143px;
+    left: 33%;
+    right: 34.06%;
     width: 134px;
   }
 }
