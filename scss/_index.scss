@@ -56,6 +56,8 @@
         }
     }
     &__access{
+        margin-top: (60/16)+em;
+        text-align: center;
         &__box{
             display: flex;
             justify-content: center;
@@ -88,6 +90,7 @@
             font-size: (30rem/16);
             margin-top: (14em/30);
             margin-bottom: (60em/30) ;
+            text-align: center;
         }
         &__title-sub{
             font-size: (20rem/20);

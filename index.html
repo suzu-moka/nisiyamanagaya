@@ -13,26 +13,37 @@
     <title>（トップページ）</title>
 </head>
 <body>
-  <!-- header -->
-  <header class="header">
-    <div class="header__inner">
-      <!-- logo -->
-      <h1 class="header__logo logo">
-        <a href="/index.html" class="logo__link">
-          <img src="" alt="イバショラボのロゴ" class="logo__visual">
-        </a>
-      </h1>
-
-      <!-- nav -->
+  <!-- ========== header  ========== -->
+<header class="header">
+  <div class="header__inner">
+    <div class="header__rogo rogo">
+      <img src="../img/common/header-logo.png" alt="暮らせる図書館" class="rogo__img">
+    </div>
       <nav class="header__nav nav">
         <ul class="nav__gnav">
-          <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">TOP</a> </li>
+          <li class="nav__gnav__list"><a href="../index.html" class="nav__gnav__link">TOP</a> </li>
           <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">インタビュー</a></li>
           <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">料金</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
+  </div>
+</header>
+
+<!-- hunberger -->
+<div class="openbtn1">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav id="g-nav">
+  <ul>
+      <li><a href="../index.html" id="nav-top">Top</a></li>
+      <li><a href="../about/index.html#about" id="nav-about">About</a></li>
+      <li><a href="../about/index.html#interview" id="nav-interview">Interview</a></li>
+      <li><a href="../price/index.html" id="nav-price">Price</a></li>
+  </ul>
+</nav>
 
   <!-- main -->
   <main class="main">
@@ -158,5 +169,6 @@
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/common.js"></script>
   </body>
 </html>

@@ -79,6 +79,7 @@
 
     &__writing{
         &_style{
+            text-align: center;
             &__day{
                 margin-bottom: 1em;
             }
@@ -151,6 +152,7 @@
         &-content{
             width: 50%;
             padding-right: 2%;
+            text-align: center;
             @media screen and (max-width:428px) {
                 padding-right: 0.7em;
             }
@@ -181,6 +183,7 @@
         &-content{
             width: 50%;
             padding-left: 2%;
+            text-align: center;
             @media screen and (max-width:428px) {
                 font-size: (16/16)+rem;
                 width: 50%;
@@ -310,6 +313,10 @@
         @media screen and (max-width:428px) {
             font-size: (18/16)+rem;
         }
+    }
+
+    &__text{
+        text-align: center;
     }
 }
 

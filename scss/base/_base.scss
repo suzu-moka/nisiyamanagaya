@@ -10,8 +10,6 @@ body{
     max-width: 100%;
     font-size: 16px;
     margin: 0;
-
-
 }
 
 li{
@@ -22,19 +20,40 @@ img{
     vertical-align: top;
 }
 
+.nav{
+    &__gnav{
+        &__link{
+            text-decoration: none;
+            color: #707070;
+        }
+    }
+}
+
+.rogo{
+    &__img{
+        width: 100%;
+    }
+}
+
 
 .header{
     max-width: 1280px;
-    height: 130px;
     margin: 0 auto;
+    margin-bottom: 1em;
     &__inner{
         @include inner-p();
         padding-top: (30em/16);
         padding-bottom: (15em/16);
         display: flex;
         flex-wrap: nowrap;
-
-        height: 130px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__rogo{
+        width: 45%;
+        &__img{
+            width: 100%;
+        }
     }
     &__logo.logo{
         width: 60%;
@@ -100,6 +119,7 @@ p{
         &__text{
             width: 90%;
             margin: auto;
+            text-align: center;
         }
     }
     .sns{
@@ -311,6 +331,12 @@ p{
 
 // SmartPhone
 @media screen and (max-width:415px) {
+    .header{
+        &__rogo{
+            width: 80%;
+        }
+    }
+
     .openbtn1{
         display: block;
     }
