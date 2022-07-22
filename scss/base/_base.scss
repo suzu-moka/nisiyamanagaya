@@ -38,6 +38,7 @@ img{
 
 .header{
     max-width: 1280px;
+    height: 130px;
     margin: 0 auto;
     margin-bottom: 1em;
     &__inner{
@@ -336,7 +337,6 @@ p{
             width: 80%;
         }
     }
-
     .openbtn1{
         display: block;
     }

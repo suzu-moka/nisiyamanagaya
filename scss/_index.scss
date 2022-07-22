@@ -13,6 +13,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         transition: background-image 1s ease-in;
+        .main__thumbnail__visual{
+            position: absolute;
+            text-align: left;
+            top: (260em/16);
+        }
     }
     // about
     &__about.about{

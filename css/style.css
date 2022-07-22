@@ -24,6 +24,7 @@ img {
 
 .header {
   max-width: 1280px;
+  height: 130px;
   margin: 0 auto;
   margin-bottom: 1em;
 }
@@ -42,6 +43,7 @@ img {
 .header__rogo__img {
   width: 100%;
 }
+
 .header__logo.logo {
   width: 60%;
   align-content: center;
@@ -276,6 +278,7 @@ p {
   .header__rogo {
     width: 80%;
   }
+
   .openbtn1 {
     display: block;
   }
@@ -386,6 +389,11 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   transition: background-image 1s ease-in;
+}
+.main__thumbnail .main__thumbnail__visual {
+  position: absolute;
+  text-align: left;
+  top: 16.25em;
 }
 .main__about.about {
   margin: 0 calc(50% - 50vw);
