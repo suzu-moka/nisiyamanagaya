@@ -68,7 +68,7 @@
     }
 
     &__inner{
-        margin: (25/16)+em
+        margin: (25/16)+em;
     }
 
     &__content{
@@ -97,12 +97,126 @@
 }
 
 
+// logo-detail
+.logo{
+    margin: (60/16)+em auto;
+    &__inner{
+        width: 85%;
+        margin: auto;
+    }
+
+    &__img{
+        width: 100%;
+        &-sun{
+            width: 100%;
+        }
+        &-after{
+            width: 100%;
+        }
+    }
+
+    &__box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        @media screen and (max-width:428px) {
+            display: block;
+        }
+    }
+
+    &__main{
+        width: 45%;
+        @media screen and (max-width:428px) {
+            width: 100%;
+        }
+        &-text{
+            font-size: (24/16)+rem;
+            color: #707070;
+            width: 45%;
+            @media screen and (max-width:428px) {
+                width: 50%;
+                font-size: (22/16)+em;
+            }
+            text-align: center;
+            font-weight: normal;
+        }
+        &-img{
+            width: 55%;
+            @media screen and (max-width:428px) {
+               width: 50%;
+            }
+        }
+        &-box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: (60/16)+em;
+        }
+    }
+
+    &__text{
+        &:nth-child(2){
+            margin-bottom: 0;
+        }
+        width: 70%;
+        margin-bottom: (40/16)+em;
+        @media screen and (max-width:428px) {
+            width: 85%;
+        }
+    }
+
+    &__detail{
+        width: 45%;
+        @media screen and (max-width:428px) {
+            width: 100%;
+            margin-top: (30/16)+em;
+        }
+        margin-top: 10em;
+        &-text{
+            font-size: (14/16)+em;
+        }
+        &-sun{
+            display: flex;
+            align-items: center;
+            margin-bottom: (50/16)+em;
+        }
+        &-img{
+            width: 50%;
+            @media screen and (max-width:428px) {
+                width: 40%;
+            }
+        }
+        &-title{
+            font-size: (26/16)+em;
+            font-weight: normal;
+            @media screen and (max-width:428px) {
+                font-size: (18/16)+em;
+            }
+        }
+        &-after{
+            display: flex;
+            align-items: center;
+        }
+        &-textbox{
+            width: 60%;
+            margin-left: (65/16)+em;
+            @media screen and (max-width:428px) {
+                width: 45%;
+                margin-left: 2em;
+            }
+        }
+    }
+}
+
 
 
 
 // shop
 .shop{
-    margin-top: (60/16)+em;
+    background-color: #F9F4EF;
     @media screen and (max-width:428px) {
         margin-top: (40/16)+em;
     }
@@ -123,6 +237,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
+        padding-top: (60/16)+em;
         @media screen and (max-width:428px) {
             width: 100%;
         }
@@ -165,6 +280,7 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
+        padding-bottom: (60/16)+em;
         &-text{
         @media screen and (max-width:428px) {
             font-size: (12/16)+rem;
@@ -262,6 +378,47 @@
         @media screen and (max-width:428px) {
             margin-left: 5%;
             font-size: (18/16)+rem;
+        }
+    }
+}
+
+// release
+.release{
+    margin-top: (60/16)+em;
+    margin-bottom: (120/16)+em;
+    position: relative;
+    &__box{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content{
+        margin: auto;
+        width: 15%;
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        @media screen and (max-width:428px) {
+            width: 35%;
+            top: 80%;
+        }
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__inner{
+        width: 90%;
+        margin: auto;
+    }
+
+    &__text{
+        line-height: 3;
+        width: 50%;
+        text-align: center;
+        @media screen and (max-width:428px) {
+            width: 85%;
         }
     }
 }
