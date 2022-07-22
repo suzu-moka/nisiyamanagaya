@@ -12,6 +12,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        transition: background-image 1s ease-in;
         .main__thumbnail__visual{
             position: absolute;
             text-align: left;
@@ -60,6 +61,8 @@
         }
     }
     &__access{
+        margin-top: (60/16)+em;
+        text-align: center;
         &__box{
             display: flex;
             justify-content: center;
@@ -92,6 +95,7 @@
             font-size: (30rem/16);
             margin-top: (14em/30);
             margin-bottom: (60em/30) ;
+            text-align: center;
         }
         &__title-sub{
             font-size: (20rem/20);
@@ -104,6 +108,64 @@
             text-align: right;
         }
     }
+}
+
+/*>*/
+.next{
+    float: right;
+    top: 360px;
+    right: 30px;
+    cursor: pointer;
+}
+
+/*<*/
+.back{
+    float: left;
+    bottom: -360px;
+    left: 30px;
+    cursor: pointer;
+}
+
+/*矢印のデザイン*/
+.arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.arrow::before,
+.arrow::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.next::before{
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.back::before{
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-left: 5px solid rgb(255, 255, 255);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 
