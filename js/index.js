@@ -83,4 +83,3 @@ $(function(){
       $(elem).css('left', x);
       $(elem).css('top', y);
   });
-});
