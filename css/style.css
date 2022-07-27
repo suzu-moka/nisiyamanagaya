@@ -342,7 +342,7 @@ p {
   }
   .footer__nav__gnav {
     display: block;
-    width: 20%;
+    width: 50%;
     text-align: left;
     padding-left: 4em;
   }
@@ -362,6 +362,7 @@ p {
   .footer .nav__gnav {
     display: block;
     margin: 0;
+    width: 50%;
   }
   .footer .nav__gnav__list {
     font-size: 12px;
@@ -574,6 +575,31 @@ p {
     left: 33%;
     right: 34.06%;
     width: 134px;
+  }
+  .main__access {
+    margin-top: 3.75em;
+    text-align: center;
+  }
+  .main__access__box {
+    display: block;
+    padding-top: 3.125em;
+    padding-bottom: 3.75em;
+  }
+  .main__access__information {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2.5em;
+  }
+  .main__access__information tr th {
+    padding-top: 0.9375em;
+  }
+  .main__access__information tr td {
+    padding-top: 0.9375em;
+  }
+  .main__access__map {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 .about__text {

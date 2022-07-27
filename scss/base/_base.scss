@@ -407,7 +407,7 @@ p{
             flex-wrap: wrap;
             &__gnav{
                 display: block;
-                width: 20%;
+                width: 50%;
                 text-align: left;
                 padding-left: 4em;
                 &__list{
@@ -427,6 +427,7 @@ p{
             &__gnav{
                 display: block;
                 margin: 0;
+                width: 50%;
                 &__list{
                     font-size: 12px;
                 }
@@ -443,6 +444,8 @@ p{
                 }
             }
         }
+
+
         &__address{
             width: 65%;
             font-size: 12px;

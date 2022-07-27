@@ -240,19 +240,31 @@
             
         }
         &__access{
+            margin-top: (60em/16);
+            text-align: center;
             &__box{
+                display: block;
+                padding-top: (50em/16);
+                padding-bottom: (60em/16);
             }
             &__information{
+                width: 100%;
+                text-align: left;
+                // margin-right: (100em/16);
+                margin-bottom: (40em/16);
                 tr{
                     th{
-    
+                        padding-top: (15em/16);
                     }
                     td{
-    
+                        padding-top: (15em/16);
                     }
                 }
             }
             &__map{
+                width: 100%;
+                max-width: 100%;
+                max-height: 100%;
             }
         }
     
