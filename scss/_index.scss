@@ -8,7 +8,7 @@
         margin: 0 calc(50% - 50vw);
         width: 100vw;
         height: 720px;
-        background-image: url(/img/LP/LP_main_visual.png);
+        background-image: url(https://bell-cocoro.org/ibasyo-rabo/img/LP/LP_main_visual.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -69,6 +69,7 @@
             top: 386px;
             left:35.47%;
             right: 35.47%;
+            margin: 0;
         }
     }
     &__access{
@@ -236,6 +237,7 @@
                 left: 33.0%;
                 right: 34.06%;
                 width: 134px;
+                margin: 0;
             }
             
         }

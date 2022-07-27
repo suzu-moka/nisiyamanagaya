@@ -24,7 +24,6 @@ img {
 
 .header {
   max-width: 1280px;
-  height: 130px;
   margin: 0 auto;
   margin-bottom: 1em;
 }
@@ -233,12 +232,12 @@ p {
 /* ボタンのためのCSS */
 .openbtn1 {
   display: none;
-  position: fixed;
-  z-index: 999; /*最前面*/
-  top: 10px;
-  right: 10px;
+  position: absolute;
+  z-index: 999;
+  top: 25px;
+  right: 30px;
   cursor: pointer;
-  width: 50px;
+  width: 65px;
   height: 50px;
 }
 
@@ -394,7 +393,7 @@ p {
   margin: 0 calc(50% - 50vw);
   width: 100vw;
   height: 720px;
-  background-image: url(/img/LP/LP_main_visual.png);
+  background-image: url(https://bell-cocoro.org/ibasyo-rabo/img/LP/LP_main_visual.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -445,6 +444,7 @@ p {
   top: 386px;
   left: 35.47%;
   right: 35.47%;
+  margin: 0;
 }
 .main__access {
   margin-top: 3.75em;
@@ -575,6 +575,7 @@ p {
     left: 33%;
     right: 34.06%;
     width: 134px;
+    margin: 0;
   }
   .main__access {
     margin-top: 3.75em;

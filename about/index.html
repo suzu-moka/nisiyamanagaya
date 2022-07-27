@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
+    <!-- ogp -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://bell-cocoro.org/ibasyo-rabo/about/">
+    <meta property="og:title" content="トップページ">
+    <meta property="og:description" content="暮らせる図書館公式サイトのトップページです。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bell-cocoro.org/ibasyo-rabo/img/common/OGP.png">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:site" content="@Twitterアカウント名">
+    <meta property="og:site_name" content="暮らせる図書館">
+
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
   <link rel="stylesheet" href="../css/style.css" media="screen and (max-width: 428px)">
     <title>（about）</title>
 </head>
@@ -18,9 +29,9 @@
     </div>
       <nav class="header__nav nav">
         <ul class="nav__gnav">
-          <li class="nav__gnav__list"><a href="../index.html" class="nav__gnav__link">TOP</a> </li>
-          <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">インタビュー</a></li>
-          <li class="nav__gnav__list"><a href="#" class="nav__gnav__link">料金</a></li>
+          <li class="nav__gnav__list"><a href="https://bell-cocoro.org/ibasyo-rabo/" class="nav__gnav__link">TOP</a> </li>
+          <li class="nav__gnav__list"><a href="https://bell-cocoro.org/ibasyo-rabo/about/" class="nav__gnav__link">インタビュー</a></li>
+          <li class="nav__gnav__list"><a href="https://bell-cocoro.org/ibasyo-rabo/price/" class="nav__gnav__link">料金</a></li>
         </ul>
       </nav>
   </div>
@@ -35,10 +46,10 @@
 
 <nav id="g-nav">
   <ul>
-      <li><a href="../index.html" id="nav-top">Top</a></li>
-      <li><a href="../about/index.html#about" id="nav-about">About</a></li>
-      <li><a href="../about/index.html#interview" id="nav-interview">Interview</a></li>
-      <li><a href="../price/index.html" id="nav-price">Price</a></li>
+      <li><a href="https://bell-cocoro.org/ibasyo-rabo/" id="nav-top">Top</a></li>
+      <li><a href="https://bell-cocoro.org/ibasyo-rabo/about/" id="nav-about">About</a></li>
+      <li><a href="https://bell-cocoro.org/ibasyo-rabo/about/#interview" id="nav-interview">Interview</a></li>
+      <li><a href="https://bell-cocoro.org/ibasyo-rabo/price/" id="nav-price">Price</a></li>
   </ul>
 </nav>
 
@@ -80,7 +91,7 @@
         </div>
 
         <!-- logo -->
-        <div class="about__logo logo" >
+        <div class="about__logo logo" id="logo">
           <div class="logo__inner">
             <h2 class="main__content__title">ロゴマークについて</h2>
             <div class="logo__box">
@@ -147,7 +158,7 @@
 
 
         <!-- shop -->
-        <div class="about__shop shop">
+        <div class="about__shop shop" id="shop">
           <div class="shop__inner">
               <div class="shop__exterior">
                 <div class="shop__exterior-content">
@@ -216,7 +227,7 @@
         </div>
 
         <!-- release -->
-        <div class="about__release release">
+        <div class="about__release release" id="release">
           <dic class="release__inner">
             <h2 class="main__content__title">開放日</h2>
             <div class="release__box">
