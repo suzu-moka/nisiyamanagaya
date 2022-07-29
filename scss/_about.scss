@@ -318,7 +318,6 @@
 // interview
 .interview{
     background-color: #FAFAFA;
-    margin-top: (60/16)+em;
     padding-top: (60/16)+em;
     padding-bottom: (80/16)+em;
     &__inner{
@@ -476,42 +475,3 @@
         text-align: center;
     }
 }
-
-// events
-// .events{
-//     margin: (60/16)+em 0;
-//     &__inner{
-//         width: 80%;
-//         margin: auto;
-//     }
-
-//     &__content{
-//         display: flex;
-//         flex-wrap: nowrap;
-//         align-items: center;
-//         justify-content: space-between;
-//         width: 100%;
-//         margin-bottom: (50/16)+em;
-//         @media screen and (max-width:428px) {
-//             display: block;
-//         }
-//     }
-
-//     &__img{
-//         display: block;
-//         width: 30%;
-//         @media screen and (max-width:428px) {
-//             width: 100%;
-//             margin-bottom: 10%;
-//         }
-//     }
-
-//     &__text{
-//         width: 80%;
-//         margin: auto;
-//         line-height: (30/16);
-//         @media screen and (max-width:428px) {
-//             line-height: (30/14);
-//         }
-//     }
-// }

@@ -114,10 +114,11 @@ p{
         padding-bottom: (30em/16);
     }
     &__sns{
+        position: relative;
         background-color: #FAFAFA;
         margin: 0 calc(50% - 50vw);
-        padding: (60em/16) 0;
-        padding-top: (40em/16);
+        padding:(40em/16) 0 (90em/16);
+
         .main__content__title:nth-of-type(1){
             margin-top: 0;
             margin-bottom: (50em/30);
@@ -126,6 +127,14 @@ p{
             width: 90%;
             margin: auto;
             text-align: center;
+        }
+        .portrait{
+            position:absolute;
+            top: 185px;
+            &__icon{
+                position:absolute;
+                left: 25px;
+            }
         }
     }
     .sns{
@@ -363,6 +372,17 @@ p{
             }
             &__text{
                 padding: 0 (73em/16);
+            }
+            .portrait{
+                position:absolute;
+                top: 277px;
+                &__icon{
+                    position:absolute;
+                    left: 0;
+                    width: 84px;
+                    height: 84px;
+                    left: 25px;
+                }
             }
         }
         .sns{
