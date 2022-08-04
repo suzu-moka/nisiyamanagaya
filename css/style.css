@@ -499,7 +499,8 @@ p {
   margin-bottom: 3.8em;
 }
 .main__content__view {
-  display: block;
+  color: #000;
+  text-decoration: none;
   text-align: right;
 }
 
