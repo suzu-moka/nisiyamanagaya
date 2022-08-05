@@ -450,10 +450,11 @@ p {
 }
 .main__sensation .circle-box {
   background-color: #000;
-  position: relative;
+  position: absolute;
   max-width: 1120px;
-  left: 6.25%;
-  right: 6.25%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .main__sensation div.item {
   position: absolute;
@@ -461,9 +462,9 @@ p {
 .main__sensation .logo {
   position: absolute;
   top: 386px;
-  left: 35.47%;
-  right: 35.47%;
-  margin: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .main__access {
   margin-top: 3.75em;
@@ -578,10 +579,11 @@ p {
     width: 100%;
   }
   .main__sensation .circle-box {
-    position: relative;
+    position: absolute;
     max-width: 364px;
-    left: 6.055%;
-    right: 6.04%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
   .main__sensation div.item {
     position: absolute;
@@ -593,10 +595,11 @@ p {
   .main__sensation .logo {
     position: absolute;
     top: 121px;
-    left: 33%;
-    right: 34.06%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 134px;
-    margin: 0;
+    margin: 0 auto;
   }
   .main__access {
     margin-top: 3.75em;

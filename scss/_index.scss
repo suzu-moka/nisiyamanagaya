@@ -51,12 +51,11 @@
         }
         .circle-box {
             background-color: #000;
-            position: relative;
+            position: absolute;
             max-width: 1120px;
-            left: 6.25%;
-            right: 6.25%;
-            // margin: 0 (5em/16);
-
+            left: 0;
+            right: 0;
+            margin: 0 auto;
 
         }
         div.item {
@@ -67,9 +66,9 @@
         .logo{
             position: absolute;
             top: 386px;
-            left:35.47%;
-            right: 35.47%;
-            margin: 0;
+            left:0;
+            right: 0;
+            margin: auto;
         }
     }
     &__access{
@@ -219,11 +218,12 @@
                 width: 100%;
             }
             .circle-box {
-                position: relative;
+                position: absolute;
                 // margin: 0 (182em/16);
                 max-width: 364px;
-                left: 6.055%;
-                right: 6.04%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
             }
             div.item {
                 position: absolute;
@@ -234,11 +234,12 @@
             }
             .logo{
                 position: absolute;
-                top: 121px;
-                left: 33.0%;
-                right: 34.06%;
+                top: 121px;                
+                bottom:  0;
+                left:  0;
+                right:  0;   
                 width: 134px;
-                margin: 0;
+                margin: 0 auto;
             }
             
         }
