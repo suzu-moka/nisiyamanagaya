@@ -501,7 +501,9 @@ p {
 .main__content__view {
   color: #000;
   text-decoration: none;
+  display: block;
   text-align: right;
+  margin-right: 1.5625em;
 }
 
 /*>*/
